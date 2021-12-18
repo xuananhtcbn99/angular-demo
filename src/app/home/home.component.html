@@ -1,16 +1,11 @@
 <div class="test">
-  <h2>home works!</h2>
   <h3>Day la component Home</h3>
+  <br>
+  <input type="text" [(ngModel)]="name">
   <h3>Chao ban {{ name}}</h3>
-  <input type="text" value="{{ name }}">
   <br>
-  <input type="text" [value]="name" title="Day la {{name}}">
-  <br>
-  <!--  <input type="text" [value]="name" title="Day la name">-->
-  <!--  <br>-->
-  <!--  <input type="text" [value]="name" [title]="'Day la ' + name">-->
-  <h2 *ngIf="age>18">Ban qua gia roi</h2>
-  <h2 *ngIf="age<=18">Ban van con tre</h2>
+
+  <button (click)="resetName()">Reset Name</button>
 
 
 </div>
