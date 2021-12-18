@@ -2,5 +2,12 @@
   <h2>home works!</h2>
   <h3>Day la component Home</h3>
   <h3>Chao ban {{ name}}</h3>
+  <input type="text" value="{{ name }}">
+  <br>
+  <input type="text" [value]="name" title="Day la {{name}}">
+  <br>
+  <input type="text" [value]="name" title="Day la name">
+  <br>
+  <input type="text" [value]="name" [title]="'Day la ' + name">
 </div>
 
