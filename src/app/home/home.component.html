@@ -6,8 +6,12 @@
   <br>
   <input type="text" [value]="name" title="Day la {{name}}">
   <br>
-  <input type="text" [value]="name" title="Day la name">
-  <br>
-  <input type="text" [value]="name" [title]="'Day la ' + name">
+  <!--  <input type="text" [value]="name" title="Day la name">-->
+  <!--  <br>-->
+  <!--  <input type="text" [value]="name" [title]="'Day la ' + name">-->
+  <h2 *ngIf="age>18">Ban qua gia roi</h2>
+  <h2 *ngIf="age<=18">Ban van con tre</h2>
+
+
 </div>
 
