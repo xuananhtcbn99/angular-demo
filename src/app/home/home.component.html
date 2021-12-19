@@ -2,26 +2,15 @@
   <h3>Day la component Home</h3>
   <h1>Trai cay</h1>
   <br>
-  <table class="table">
-    <tr>
-      <th>STT</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Price down</th>
-    </tr>
-    <tr *ngFor="let trai of traiCay2; let i = index">
-      <td>{{ i + 1 }}</td>
-      <td>{{ trai.ten | uppercase }}</td>
-      <td class="right">
-        <span [ngClass]="{'so-am': trai.gia<0}">{{ trai.gia | currency:'USD':'symbol':'1.2'}}</span>
-      </td>
-      <td class="right">
-        <span>{{ trai.haGia | onSale| uppercase }}</span>
-      </td>
-    </tr>
-
-  </table>
-
+  Tinh/Thanh pho:
+  <select id="city" (change)="changeCity($event)">
+    <option *ngFor="let data of vietnamData" value="{{ data.city }}">{{ data.city }}</option>
+  </select>
+  <br>
+  Quan/Huyen:
+  <select id="district">
+    <option *ngFor="let district of districts" value="{{ district }}">{{ district }}</option>
+  </select>
 
 </div>
 
