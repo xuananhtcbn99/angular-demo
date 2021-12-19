@@ -1,10 +1,26 @@
 <div class="test">
-<h3>Day la component Home</h3>
+  <h3>Day la component Home</h3>
   <h1>Trai cay</h1>
-  <div *ngFor="let trai of traiCay; let i = index">
-    <li>{{ i+1 }}. {{ trai }}</li>
+  <br>
+  <table class="table">
+    <tr>
+      <th>STT</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Price down</th>
+    </tr>
+    <tr *ngFor="let trai of traiCay2; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ trai.ten }}</td>
+      <td class="right">
+        <span [ngClass]="{'so-am': trai.gia<0}">{{ trai.gia }}</span>
+      </td>
+      <td class="right">
+        <span *ngIf="trai.haGia">Dang ha gia</span>
+      </td>
+    </tr>
 
-  </div>
+  </table>
 
 
 </div>

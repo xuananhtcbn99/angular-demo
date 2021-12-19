@@ -3,3 +3,15 @@
   padding: 10px;
   box-shadow: 5px 10px #888888;
 }
+.table {
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+}
+.right {
+  text-align: right;
+}
+.so-am {
+  color: red;
+}
